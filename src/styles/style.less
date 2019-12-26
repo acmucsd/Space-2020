@@ -1,9 +1,19 @@
 @import './reset.less';
 
 .App {
-  background-color: #0A0842;
   color: white;
   font-family: 'Lato', sans-serif;
-  height: 100vh;
-  text-align: center;
+  height: 400vh;
+  overflow: hidden;
+  .pages {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 400vh;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }

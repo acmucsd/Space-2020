@@ -1,9 +1,10 @@
 import React from 'react';
+import "./style.less";
 
 const Page4: React.FC = () => {
   return (
     <div className="page4">
-      <p>Hello World!</p>
+      <p>This is page 4</p>
     </div>
   );
 }
