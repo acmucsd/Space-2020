@@ -1,4 +1,5 @@
-import React from 'react';
+import React from "react";
+import "./style.less";
 
 const Page2: React.FC = () => {
   return (
@@ -6,6 +7,6 @@ const Page2: React.FC = () => {
       <p>Hello World!</p>
     </div>
   );
-}
+};
 
 export default Page2;
