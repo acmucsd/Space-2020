@@ -1,10 +1,17 @@
 import React from "react";
 import "./style.less";
 
+import Statistic from "../../components/statistic";
+
 const Page2: React.FC = () => {
   return (
     <div className="page2">
-      <p>Hello World!</p>
+      <div className="stats">
+      <Statistic number="600+" group="Students" />
+      <Statistic number="25" group="Companies" />
+      <Statistic number="3" group="Statistics" />
+      <Statistic number="1" group="Statistic" />
+      </div>
     </div>
   );
 };
