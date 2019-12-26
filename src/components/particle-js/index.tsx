@@ -4,7 +4,7 @@ import Particles from "react-particles-js";
 const Particle: React.FC = () => {
   return (
     <Particles
-      //   @ts-ignore
+      //@ts-ignore
       params={{
         particles: {
           number: {
