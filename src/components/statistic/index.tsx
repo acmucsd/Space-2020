@@ -15,4 +15,16 @@ const Statistic: React.FC<StatProps> = ({number, group}) => {
   );
 }
 
+
+const StatisticMobile: React.FC = () => {
+  return (
+    <div className="statistic">
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+    </div>
+  );
+}
+
 export default Statistic;
