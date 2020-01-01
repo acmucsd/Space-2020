@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.less";
 
-import Statistic, { StatisticMobile } from "../../components/statistic";
+import Statistic from "../../components/statistic";
 import Typing from "../../components/typing-text";
 
 import astro from "../../assets/astro-greet.svg";
