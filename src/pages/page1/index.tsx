@@ -1,5 +1,6 @@
 import React from 'react';
-import Button from '../components/button/index';
+import Button from '../../components/button/index';
+import "./style.less";
 
 const Page1: React.FC = () => {
   return (
@@ -13,6 +14,6 @@ const Page1: React.FC = () => {
       <Button/>
     </div>
   );
-}
+};
 
 export default Page1;

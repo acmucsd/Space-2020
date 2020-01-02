@@ -1,21 +1,26 @@
 import React from "react";
 import Particles from "react-particles-js";
 
+import "./style.less";
+
+
 const Particle: React.FC = () => {
   return (
     <Particles
-      //@ts-ignore
+      canvasClassName="particles"
+      height="400vh"
+    //   @ts-ignore
       params={{
         particles: {
           number: {
-            value: 160,
+            value: 80,
             density: {
               enable: true,
-              value_area: 800
+              value_area: 1500
             }
           },
           color: {
-            value: "#ffffff"
+            value: "#8C8C8C"
           },
           shape: {
             type: "circle",

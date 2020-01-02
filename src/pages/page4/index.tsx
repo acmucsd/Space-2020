@@ -1,5 +1,6 @@
 import React from 'react';
-import FAQ from '../components/faq/index';
+import FAQ from '../../components/faq/index';
+import "./style.less";
 
 const Page4: React.FC = () => {
   return (
