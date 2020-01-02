@@ -1,3 +1,42 @@
+@import '../../style.less';
+
 .faq {
-  text-align: center;
+  width: 60%;
+  margin: 0 auto;
+  font-family: Rubik, sans-serif;
+}
+
+.symbol {
+  float: right;
+}
+
+.symbol img {
+  height: 13px;
+}
+
+.break {
+  width: 100%;
+  height: 5px;
+  background-color: white;
+  border-radius: 2px;
+}
+
+.accordion {
+  color: #fff;
+  cursor: pointer;
+  padding: 18px;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  background-color: @purple;
+  width: 100%;
+  display: inline-block;
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  color: white;
+  overflow: hidden;
 }
