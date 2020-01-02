@@ -4,7 +4,7 @@ import "./style.less";
 
 const Page1: React.FC = () => {
   return (
-    <div className="page1">
+    <div className="page page1">
       <div className="banner-img-container"></div>
       <h1>StartuP: ACM's Career Expo</h1>
       <div>

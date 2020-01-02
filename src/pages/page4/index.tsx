@@ -4,7 +4,7 @@ import "./style.less";
 
 const Page4: React.FC = () => {
   return (
-    <div className="page4">
+    <div className="page page4">
       <FAQ/>
     </div>
   );
