@@ -1,0 +1,49 @@
+@import '../../styles/style.less';
+
+.navbar {
+  display: flex;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 1;
+  color: white;
+  background-color: @purple;
+
+  .navbar-brand, .navbar-item {
+    display: inline-flex;
+    padding: 20px 25px;
+  }
+
+  ul {
+    padding: 0px 20px;
+    margin-left: auto;
+  }
+  
+  li a:visited, li:visited{
+    color: initial;
+  }
+  
+  li:hover {
+    cursor: pointer;
+  }
+
+  li a::after {
+    transition: 300ms;
+    height: 3px;
+    content: "";
+    background-color: cyan;
+    width: 0%;
+    display: block;
+    margin-top: 5px;
+  } 
+
+  li a:hover::after {
+    width: 100%;
+  }
+
+}
+
+li a, li {
+  text-decoration: none;
+  color: white;
+}
