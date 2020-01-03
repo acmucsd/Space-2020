@@ -14,13 +14,18 @@
     padding: 20px 25px;
   }
 
+  .navbar-brand {
+    height: 32px;
+    padding-top: 12px;
+  }
+
   ul {
     padding: 0px 20px;
     margin-left: auto;
   }
   
   li a:visited, li:visited{
-    color: initial;
+    color: white;
   }
   
   li:hover {
@@ -41,9 +46,38 @@
     width: 100%;
   }
 
+  .menu-icon {
+    margin-left: auto;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 33px;
+  }
 }
 
 li a, li {
   text-decoration: none;
   color: white;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+  .navbar {
+    flex-direction: column;
+  }
+
+  .navbar ul {
+    display: none;
+    background-color: @lightoran;
+  }
+
+  .menu-icon {
+    display: inline-flex;
+  }
+
+  .navbar .navbar-brand {
+    padding-top: 20px;
+  }
+
 }
