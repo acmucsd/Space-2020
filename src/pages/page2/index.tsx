@@ -27,7 +27,7 @@ const Page2: React.FC = () => {
           the place to be!
           <br />
           <br />
-          SPACE will be held March 99 2020.
+          SPACE will be held March 9th 2020.
         </p>
         <img className="astro" src={astro} alt="astro" />
       </div>
