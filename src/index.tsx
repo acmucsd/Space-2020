@@ -20,6 +20,7 @@ const App: React.FC = () => {
         <Page2 />
         {/* <Page3 />
         <Page4 /> */}
+        <Footer />
       </div>
     </div>
   );
