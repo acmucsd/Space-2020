@@ -1,0 +1,122 @@
+@import '../../styles/style.less';
+
+.navbar {
+  display: flex;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 1;
+  color: white;
+  background-color: @purple;
+  
+  li a:visited, li:visited{
+    color: white;
+  }
+  
+  li:hover {
+    cursor: pointer;
+  }
+
+  li a::after {
+    transition: 300ms;
+    height: 3px;
+    content: "";
+    background-color: @cerulean;
+    width: 0%;
+    display: block;
+    margin-top: 5px;
+  } 
+
+  li a:hover::after {
+    width: 100%;
+  }
+}
+
+.navbar-ul {
+  padding: 0px 20px;
+  margin-left: auto;
+}
+
+li a, li {
+  text-decoration: none;
+  color: white;
+}
+
+.navbar-brand, .navbar-item {
+  display: inline-flex;
+  padding: 20px 25px;
+}
+
+.navbar-brand {
+  height: 32px;
+  padding-top: 12px;
+}
+
+.menu-icon {
+  margin-left: auto;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  height: 33px;
+  display: none;
+}
+
+.brand-img {
+  display: flex;
+}
+
+.brand-img-mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+
+  .navbar {
+    flex-direction: column;
+    background-color: @lightoran;
+  }
+
+  .navbar-ul {
+    display: none;
+    background-color: @lightoran;
+    width: 100%;
+    flex-direction: column;
+    height: 0px;
+    transition: height 100ms ease-in;
+    padding: 0px;
+  }
+
+  .navbar-ul li {
+    border-bottom: solid 1px @pale;
+    font-family: Rubik;
+    font-size: 20px;
+  }
+
+  .navbar-ul li:last-child {
+    border: none;
+  }
+
+  .navbar-ul li:hover {
+    background-color: rgba(196, 196, 196, 0.3);
+  }
+  .expand {
+    display: flex;
+    height: auto;
+  }
+
+  .menu-icon {
+    display: inline-flex;
+  }
+
+  .navbar .navbar-brand {
+    padding-top: 20px;
+  }
+
+  .brand-img {
+    display: none;
+  }
+
+  .brand-img-mobile {
+    display: flex;
+  }
+}

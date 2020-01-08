@@ -3,7 +3,7 @@ import "./style.less"
 
 const Page3: React.FC = () => {
   return (
-    <div className="page3">
+    <div className="page page3">
       <p>This is page 3</p>
     </div>
   );

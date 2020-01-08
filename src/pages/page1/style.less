@@ -1,3 +1,65 @@
 .page1 {
     height: 100vh;
+
+    h1 {
+      font-size: 36px;
+      line-height: 36px;
+      text-align: center;
+      font-family: Rubik;
+      font-weight: 500;
+    }
+
+    p {
+        font-size: 20px;
+    }
+    
+}
+
+.info {
+  margin: 10px 0px;
+}
+
+.page1-content {
+  transform: translateY(25%);
+  display: block;
+  position: absolute;
+  width: 75%;
+}
+
+.banner-img-container {
+  img {
+      width: 90%;
+      max-width: 700px;
+  }
+}
+
+.mobile-image {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .page1-content {
+    transform: translateY(0%);
+  }
+
+  .mobile-image {
+    display: block;
+    margin: 10px 0px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .info {
+    p {
+      font-size: 16px;
+      margin: 0px;
+    }
+  }
+
+  .page1 h1 {
+    font-size: 24px;
+    line-height: 24px;
+  }
 }
