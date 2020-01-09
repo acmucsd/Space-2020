@@ -12,9 +12,8 @@ const Page2: React.FC = () => {
     <div className="stats">
     <div>
       <Statistic number="600+" group="Students" />
-      <Statistic number="25" group="Companies" />
+      <Statistic number="TBA" group="Companies" />
       <Statistic number="8" group="Hours" />
-      <Statistic number="3" group="Statistics" />
       </div>
     </div>
       <div className="typer">
