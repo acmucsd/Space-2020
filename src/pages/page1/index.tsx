@@ -15,7 +15,9 @@ const Page1: React.FC = () => {
           <p>March 9th, 2020 @ 10am-6pm</p>
         </div>
         <div className="mobile-image"><img src={mobileImg} alt="astronaut"/></div>
-        <Button/>
+        <div className="button-div">
+          <Button/>
+        </div>
       </div>
       
     </div>

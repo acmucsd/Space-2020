@@ -28,3 +28,4 @@ const StatisticMobile: React.FC = () => {
 }
 
 export default Statistic;
+export { StatisticMobile };
