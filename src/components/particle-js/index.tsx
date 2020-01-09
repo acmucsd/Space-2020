@@ -8,7 +8,7 @@ const Particle: React.FC = () => {
   return (
     <Particles
       canvasClassName="particles"
-      height="400vh"
+      height="250vh"
     //   @ts-ignore
       params={{
         particles: {
