@@ -4,7 +4,7 @@ import './style.less';
 const Button: React.FC = () => {
   return (
     <div className="button">
-      <p>Hello World!</p>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLScakibzfhXDbY-IEQ0g3nwwS_eNsQzgHmDZwBiXL0l82N712A/viewform?usp=sf_link">Register now!</a>>
     </div>
   );
 }
