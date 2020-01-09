@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "./style.less";
 import rocket from "../../assets/mini-rocket.svg";
 import rocketMobile from "../../assets/mini-rocket-mobile.svg";
