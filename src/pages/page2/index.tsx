@@ -9,11 +9,13 @@ import astro from "../../assets/astro-greet.svg";
 const Page2: React.FC = () => {
   return (
     <div className="page page2">
-      <div className="stats">
+    <div className="stats">
+    <div>
         <Statistic number="600+" group="Students" />
         <Statistic number="TBA" group="Companies" />
         <Statistic number="6" group="Hours" />
       </div>
+    </div>
       <div className="typer">
         <Typing />
       </div>
