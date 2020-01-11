@@ -12,8 +12,8 @@
   .pages {
     position: absolute;
     left: 0;
-    top: 72px;
-    // height: 200vh;
+    top: 0;
+    height: 400vh;
     width: 100%;
     text-align: center;
     display: flex;
@@ -23,5 +23,11 @@
   }
   .page {
     width: 75%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .App .pages {
+    top: 75px;
   }
 }
