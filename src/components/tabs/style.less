@@ -1,0 +1,41 @@
+@import '../../styles/style.less';
+
+.tabs {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tab-list {
+    display: inline-flex;
+    float: left;
+    width: fit-content;
+}
+
+.tab {
+    display: inline-flex;
+    font-family: Rubik;
+    font-weight: 500;
+    font-size: 1.25rem;
+    color: rgba(240, 240, 240, 0.5);
+    padding: 15px 20px 15px 0px;
+    cursor: pointer;
+}
+
+.tab:hover {
+    color: white;
+}
+
+.tab-active {
+    color: @cerulean;
+}
+
+.tab-content {
+    display: flex;
+    width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+    .tab {
+        font-size: 1rem;
+    }
+}
