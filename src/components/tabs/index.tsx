@@ -22,10 +22,11 @@ const Tabs: React.FC<TabsProps> = (props) => {
         {
           children.map((child, label) => {
             if(child) {
-              if(label == activeTab) {
+              if(label === activeTab) {
                 return (
                   <Tab
                     activeLabel={"tab-active"}
+                    key={label}
                     label={label}
                     onClickAction={onClickTab}
                     content={tabList[label]}
@@ -36,19 +37,20 @@ const Tabs: React.FC<TabsProps> = (props) => {
                   <Tab
                     activeLabel={""}
                     label={label}
+                    key={label}
                     onClickAction={onClickTab}
                     content={tabList[label]}
                   />
                 );
               }
-            }
+            } else return undefined;
           })
         }
       </ol>
       <div className="tab-content">
         {
           children.map((child, label) => {
-              if (label != activeTab) {
+              if (label !== activeTab) {
                 return undefined;
               }
               return child;

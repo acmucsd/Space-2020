@@ -26,14 +26,13 @@ const Panel: React.FC<PanelProps> = ({ panelTitle, panelContent }) => {
     } else {
       setHeight(setActive === 'header-active' ? '0px' : `${content.current.scrollHeight}px`);
       setMargin(setActive === 'header-active' ? '0px' : '12px 0px 30px 18px');
-      setSpin(setActive === 'header-active' ? '' : 'spin')
-      // console.log(content.current.scrollHeight);
+      setSpin(setActive === 'header-active' ? '' : 'spin');
     }
   }
 
   return (
     <div className='panel'>
-      <button className={`header ${setActive}`} onClick={togglePanel}><span className={`arrow ${spin}`}><img src={Arrow}/></span>{ panelTitle }</button>
+      <button className={`header ${setActive}`} onClick={togglePanel}><span className={`arrow ${spin}`}><img alt="panel button" src={Arrow}/></span>{ panelTitle }</button>
       <div className='content' ref={content} style={{ maxHeight: `${height}`, margin: `${margin}` } } >
           <p>{ panelContent }</p>
       </div>

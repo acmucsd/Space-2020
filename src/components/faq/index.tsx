@@ -16,6 +16,7 @@ const FAQ: React.FC<FAQProps> = ({panelTitles, panelContents}) => {
         panelTitles.map((title, label) => {
           return ( <Panel
             panelTitle={title}
+            key={label}
             panelContent={panelContents[label]}
           /> );
         })

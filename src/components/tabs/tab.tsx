@@ -2,7 +2,7 @@ import React from 'react';
 import './style.less';
 
 interface TabProps extends React.Props<any> {
-    activeLabel: string
+    activeLabel: string;
     label: number;
     content: string;
     onClickAction: (label:number) => void;
