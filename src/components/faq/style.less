@@ -1,27 +1,11 @@
 @import '../../../src/styles/style.less';
 
 .faq {
-  width: 60%;
   margin: 0 auto;
   font-family: Rubik, sans-serif;
 }
 
-.symbol {
-  float: right;
-}
-
-.symbol img {
-  height: 13px;
-}
-
-.break {
-  width: 100%;
-  height: 5px;
-  background-color: white;
-  border-radius: 2px;
-}
-
-.accordion {
+.header {
   color: #fff;
   cursor: pointer;
   padding: 18px;
@@ -34,9 +18,22 @@
   display: inline-block;
 }
 
-.panel {
+.header:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.header-active:after {
+  content: '\2212';
+}
+
+.content {
   padding: 0 18px;
-  display: none;
+  /*height: 0px;*/
   color: white;
   overflow: hidden;
+  transition: max-height 0.2s ease-out;
 }

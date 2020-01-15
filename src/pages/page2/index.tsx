@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.less";
 
-import Statistic from "../../components/statistic";
+import Statistic, {StatisticMobile} from "../../components/statistic";
 import Typing from "../../components/typing-text";
 
 import astro from "../../assets/astro-greet.svg";
@@ -12,7 +12,7 @@ const Page2: React.FC = () => {
     <div className="stats">
     <div>
       <Statistic number="600+" group="Students" />
-      <Statistic number="25" group="Companies" />
+      <Statistic number="TBA" group="Companies" />
       <Statistic number="8" group="Hours" />
       </div>
     </div>

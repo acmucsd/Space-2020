@@ -7,20 +7,27 @@
 .App {
   color: white;
   font-family: 'Lato', sans-serif;
-  height: 250vh;
+  height: 220vh;
   overflow: hidden;
   .pages {
     position: absolute;
     left: 0;
-    top: 72px;
-    // height: 200vh;
+    top: 0;
+    height: 400vh;
     width: 100%;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #0a0842;
   }
   .page {
     width: 75%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .App .pages {
+    top: 75px;
   }
 }
