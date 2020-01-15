@@ -14,7 +14,16 @@ const App: React.FC = () => {
   return (
     <div className="App">
       <Particle />
-      <Navbar/>
+      <div
+          style={{
+            position: "absolute",
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "100%"
+          }}
+        >
+<Navbar/>
       <div className="pages">
         <Page1 />
         <Page2 />
@@ -22,6 +31,8 @@ const App: React.FC = () => {
         <Page4 /> */}
         <Footer />
       </div>
+        </div>
+      
     </div>
   );
 };
