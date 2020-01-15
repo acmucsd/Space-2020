@@ -5,7 +5,7 @@ import "./style.less";
 
 const Page4: React.FC = () => {
   return (
-    <div className="page page4">
+    <div id="faq" className="page page4">
       <h2>FAQs</h2>
       <Tabs initialTab="Test1" tabList={["For Students", "For Companies"]}>
       <FAQ 

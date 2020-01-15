@@ -14,12 +14,15 @@ const App: React.FC = () => {
   return (
     <div className="App">
       <Particle />
-      <Navbar/>
+      <Navbar 
+        labels={["About", "Sponsors", "FAQ", "Contact"]}
+        targets={["#about", "#", "#faq", "#footer"]}
+      />
       <div className="pages">
         <Page1 />
         <Page2 />
-        {/* <Page3 />*/
-        <Page4 />}
+        {/* <Page3 /> 
+        <Page4 /> */ }
         <Footer />
       </div>
     </div>

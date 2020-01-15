@@ -4,6 +4,11 @@ import rocket from "../../assets/mini-rocket.svg";
 import rocketMobile from "../../assets/mini-rocket-mobile.svg";
 import hamburger from "../../assets/menu-icon.svg";
 
+interface NavProps extends React.Props<any> {
+  labels: Array<string>;
+  targets: Array<string>;
+}
+
 const expand = () => {
   if(document.getElementsByClassName('navbar-ul')[0].classList.contains('expand')) {
     document.getElementsByClassName('navbar-ul')[0].classList.remove('expand');
@@ -12,7 +17,7 @@ const expand = () => {
   }
 }
 
-const Navbar: React.FC = () => {
+const Navbar: React.FC<NavProps> = ({labels, targets}) => {
 
   return (
     <nav className="navbar navbar-expand">
@@ -26,10 +31,13 @@ const Navbar: React.FC = () => {
         </div>
 
         <ul className="navbar-ul">
-            <li className="navbar-li navbar-item"><a href="#">About</a></li>
-            <li className="navbar-li navbar-item"><a href="#">Sponsors</a></li>
-            <li className="navbar-li navbar-item"><a href="#">FAQ</a></li>
-            <li className="navbar-li navbar-item"><a href="#">Contact</a></li>
+            {
+              labels.map((label, i) => {
+                return (
+                  <li className="navbar-li navbar-item" key={i}><a href={targets[i]}>{label}</a></li>
+                )
+              })
+            }
         </ul>
     </nav>
   );
