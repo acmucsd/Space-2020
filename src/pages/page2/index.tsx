@@ -1,5 +1,6 @@
 import React from "react";
 import "./style.less";
+import data from "./stats.json";
 
 import Statistic, {StatisticMobile} from "../../components/statistic";
 import Typing from "../../components/typing-text";
@@ -11,9 +12,10 @@ const Page2: React.FC = () => {
     <div className="page page2">
     <div className="stats">
     <div>
-      <Statistic number="600+" group="Students" />
-      <Statistic number="TBA" group="Companies" />
-      <Statistic number="8" group="Hours" />
+      { data.stats.map(data => {
+          return <Statistic number={data.number} group={data.name} />
+        })
+      }
       </div>
     </div>
       <div className="typer">
