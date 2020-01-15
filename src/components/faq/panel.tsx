@@ -24,7 +24,7 @@ const Panel: React.FC<PanelProps> = ({ panelTitle, panelContent }) => {
     if(content.current == null) {
       console.log('error with faq panel height toggle');
     } else {
-      setHeight(setActive === 'header-active' ? '0px' : `${content.current.scrollHeight}px`);
+      setHeight(setActive === 'header-active' ? '0px' : `${content.current.scrollHeight + 30}px`);
       setMargin(setActive === 'header-active' ? '0px' : '12px 0px 30px 18px');
       setSpin(setActive === 'header-active' ? '' : 'spin');
     }
@@ -34,7 +34,7 @@ const Panel: React.FC<PanelProps> = ({ panelTitle, panelContent }) => {
     <div className='panel'>
       <button className={`header ${setActive}`} onClick={togglePanel}><span className={`arrow ${spin}`}><img alt="panel button" src={Arrow}/></span>{ panelTitle }</button>
       <div className='content' ref={content} style={{ maxHeight: `${height}`, margin: `${margin}` } } >
-          <p>{ panelContent }</p>
+          <p dangerouslySetInnerHTML={{ __html: panelContent}}/>
       </div>
     </div>
   )
