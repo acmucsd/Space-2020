@@ -3,6 +3,7 @@
 .faq {
   margin: 0 auto;
   font-family: Rubik, sans-serif;
+  font-size: 1.25rem;
 }
 
 .header {
@@ -16,24 +17,54 @@
   background-color: @purple;
   width: 100%;
   display: inline-block;
+  font-family: Rubik;
+  font-size: 1.25rem;
 }
 
-.header:after {
-  content: '\002B';
-  color: #777;
-  font-weight: bold;
+.panel {
+  border-top: 5px solid white;
+}
+
+.panel:last-child {
+  border-bottom: 5px solid white;
+}
+
+.arrow {
   float: right;
   margin-left: 5px;
+  transition: 1ms all ease-in;
+  -webkit-transition: 300ms all ease-in;
+  img {
+    height: 15px;
+  }
 }
 
-.header-active:after {
-  content: '\2212';
+.spin {
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
 }
 
 .content {
-  padding: 0 18px;
-  /*height: 0px;*/
   color: white;
   overflow: hidden;
+  text-align: left;
   transition: max-height 0.2s ease-out;
+  a {
+    color: white;
+  }
+
+  a:visited {
+    color: white;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .faq {
+    font-size: 1rem;
+  }
+
+  .header {
+    font-size: 1rem;
+    padding: 18px 5px;
+  }
 }

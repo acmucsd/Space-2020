@@ -9,7 +9,7 @@ import astro from "../../assets/astro-greet.svg";
 
 const Page2: React.FC = () => {
   return (
-    <div className="page page2">
+    <div className="page page2" id="about">
     <div className="stats">
     <div>
       { data.stats.map(data => {
