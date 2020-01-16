@@ -21,6 +21,8 @@ const FAQ: React.FC<FAQProps> = ({panelTitles, panelContents}) => {
           /> );
         })
       }
+      <br/>
+      For any additional questions or inquiries, please reach out to Adam Lee at <a href="mailto:a3lee@ucsd.edu">a3lee@ucsd.edu</a>
     </div>
   )
 };

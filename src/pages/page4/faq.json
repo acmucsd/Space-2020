@@ -1,0 +1,54 @@
+{
+    "students": [
+        {
+            "question" : "What time should I get there?",
+            "answer" : "The ballroom doors will open at 10:00 AM for admission. You can arrive early to line up outside before doors open. We require all attendees to have registered before entering, which you can do ahead of time <a href='https://acmurl.com/spacereg'>here</a>. We will send out tickets to those who registered right before the event."
+        },
+        {
+            "question" : "How do I attend?"            ,
+            "answer" : "You can register at <a href='https://acmurl.com/spacereg'>https://acmurl.com/spacereg</a> — more information regarding day-of logistics will be announced closer to the event. The event will be held in Price Center’s West Ballroom."
+        },
+        {
+            "question" : "Who can attend?",
+            "answer" : "All UCSD students (undergraduate and graduate students). If you're an alumni and you're interested in attending, please use your alumni ucsd.edu email address to register. You can get one if you don't have one already <a href='https://www.alumni.ucsd.edu/s/1170/rd18/wide.aspx?sid=1170&gid=1&pgid=8556'>here</a>."
+        },
+        {
+            "question" : "What is the dress code?",
+            "answer" : "No dress code for this event - <a href='https://www.forbes.com/sites/rodneywilliams/2017/03/30/the-new-startup-attire-just-be-you/#7c27bc5764b2'>Keep it Simple. More information — Keep it Simple by Forbes</a>."
+        },
+        {
+            "question" : "What kind of companies will be coming?            ",
+            "answer" : "SPACE is exclusively hosting startups. We’re planning on hosting a vast variety of companies from different industries, and a full lineup will be posted in February."
+        }
+    ],
+    "companies" : [
+        {
+            "question" : "When and Where is SPACE?",
+            "answer" : "SPACE will be held from 10am to 6pm on March 9th, 2020. Please arrive around 8:30am to facilitate set-up and check-in. SPACE will be in the Price Center West Ballroom in the center of UC San Diego. Parking assistance and information will be provided closer to the event (February)."
+        },
+        {
+            "question" : "How do I join?",
+            "answer" : "Please send an email to Adam Lee (<a href='mailto:a3lee@ucsd.edu'>a3lee@ucsd.edu</a>), the Sponsorship Director for SPACE. After an initial phone call to give more info and answer questions, we’ll send information regarding registration."
+        },
+        {
+            "question" : "What is the deadline to join?",
+            "answer" : "While there isn’t a tight deadline, we’d like to confirm all companies by early to mid February to allow for time to book parking and event logistics accordingly."
+        },
+        {
+            "question" : "Parking / Food / Event Logistics",
+            "answer" : "Closer to the event, ~Mid to Late February, registered companies will be sent information to assist in parking and event logistics. All meals will be provided (Breakfast / Lunch / Snacks)."
+        },
+        {
+            "question" : "What qualifies a company to be a startup?",
+            "answer" : "SPACE defines a startup as a company that is currently in an early growth stage. We understand this definition may be a bit confusing - if you aren’t sure you’re a startup, but are interested in SPACE or want to get involved with ACM at UC San Diego, please email Adam Lee (<a href='mailto:a3lee@ucsd.edu'>a3lee@ucsd.edu</a>).            "
+        },
+        {
+            "question" : "What Types of Students Will Attend?",
+            "answer" : "SPACE is geared toward software engineers, designers, and data scientists. <br/><br/>For convenience, we also provide digital resumes of applicants, indexed by skills and desired roles."
+        },
+        {
+            "question" : "What companies will attend?",
+            "answer" : "More information will be posted as the event nears (Mid February)"
+        }
+    ]
+}
