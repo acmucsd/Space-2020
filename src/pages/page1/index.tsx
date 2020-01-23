@@ -12,7 +12,7 @@ const Page1: React.FC = () => {
         <h1>StartuP: ACM's Career Expo</h1>
         <div className="info">
           <p>Price Center West Ballroom</p>
-          <p>March 9th, 2020 @ 10am-6pm</p>
+          <p>March 9th, 2020 @ 9am-3pm</p>
         </div>
         <div className="mobile-image"><img src={mobileImg} alt="astronaut"/></div>
         <div className="button-div">
