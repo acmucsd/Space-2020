@@ -16,7 +16,14 @@ const Page1: React.FC = () => {
         </div>
         <div className="mobile-image"><img src={mobileImg} alt="astronaut"/></div>
         <div className="button-div">
-          <Button/>
+          <Button
+            title="Student Registration"
+            link="https://docs.google.com/forms/d/e/1FAIpQLScakibzfhXDbY-IEQ0g3nwwS_eNsQzgHmDZwBiXL0l82N712A/viewform?usp=sf_link"
+          />
+          <Button
+            title="Company Registration"
+            link="https://events.eventzilla.net/e/space--uc-san-diego-2138781014"
+          />
         </div>
       </div>
       
