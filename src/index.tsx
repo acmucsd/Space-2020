@@ -15,8 +15,8 @@ const App: React.FC = () => {
     <div className="App">
       <Particle />
       <Navbar 
-        labels={["About", "Sponsors", "FAQ", "Contact"]}
-        targets={["#about", "#", "#faq", "#footer"]}
+        labels={["About", "FAQ", "Contact"]}
+        targets={["#about", "#faq", "#footer"]}
       />
       <div className="pages">
         <Page1 />
