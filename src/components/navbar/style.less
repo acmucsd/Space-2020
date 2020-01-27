@@ -9,15 +9,15 @@
   color: white;
   background-color: @purple;
   
-  li a:visited, li:visited{
+  a li:visited, a:visited{
     color: white;
   }
   
-  li:hover {
+  a:hover {
     cursor: pointer;
   }
 
-  li a::after {
+  a li::after {
     transition: 300ms;
     height: 3px;
     content: "";
@@ -27,7 +27,7 @@
     margin-top: 5px;
   } 
 
-  li a:hover::after {
+  a li:hover::after {
     width: 100%;
   }
 }
@@ -37,7 +37,7 @@
   margin-left: auto;
 }
 
-li a, li {
+a li, a {
   text-decoration: none;
   color: white;
 }
@@ -86,17 +86,17 @@ li a, li {
     padding: 0px;
   }
 
-  .navbar-ul li {
+  .navbar-ul a {
     border-bottom: solid 1px @pale;
     font-family: Rubik;
     font-size: 20px;
   }
 
-  .navbar-ul li:last-child {
+  .navbar-ul a:last-child {
     border: none;
   }
 
-  .navbar-ul li:hover {
+  .navbar-ul a:hover {
     background-color: rgba(196, 196, 196, 0.3);
   }
   .expand {
