@@ -7,7 +7,8 @@ import space from "../../assets/space.svg";
 
 const Footer: React.FC = () => {
   return (
-    <div className="page" id="footer">
+    <div className="page">
+      <a className="anchor" id="footer"></a>
       <img src={space} alt="Space" />
       <div className="links">
         <a href="mailto:acm@ucsd.edu">
