@@ -1,10 +1,16 @@
 import React from 'react';
 import './style.less';
 
-const Button: React.FC = () => {
+interface ButtonProps extends React.Props<any> {
+  title: string;
+  link: string;
+}
+
+
+const Button: React.FC<ButtonProps> = ({title, link}) => {
   return (
     <div className="button">
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLScakibzfhXDbY-IEQ0g3nwwS_eNsQzgHmDZwBiXL0l82N712A/viewform?usp=sf_link">Register now!</a>
+      <a href={link}>{title}</a>
     </div>
   );
 }

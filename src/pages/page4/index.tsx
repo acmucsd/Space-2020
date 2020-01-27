@@ -8,15 +8,16 @@ import "./style.less";
 
 const Page4: React.FC = () => {
   return (
-    <div id="faq" className="page page4">
+    <div className="page page4">
+      <a className="anchor" id="faq"></a>
       <h2>FAQs</h2>
       <Tabs initialTab="Test1" tabList={["For Students", "For Companies"]}>
-      <FAQ 
-        panelTitles={faqData.students.map(faq => faq.question)} 
+      <FAQ
+        panelTitles={faqData.students.map(faq => faq.question)}
         panelContents={faqData.students.map(faq => faq.answer)}
       />
-      <FAQ 
-        panelTitles={faqData.companies.map(faq => faq.question)} 
+      <FAQ
+        panelTitles={faqData.companies.map(faq => faq.question)}
         panelContents={faqData.companies.map(faq => faq.answer)}
       />
       </Tabs>
