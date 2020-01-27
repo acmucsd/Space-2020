@@ -34,7 +34,7 @@ const Navbar: React.FC<NavProps> = ({labels, targets}) => {
             {
               labels.map((label, i) => {
                 return (
-                  <li className="navbar-li navbar-item" key={i}><a href={targets[i]}>{label}</a></li>
+                  <a href={targets[i]}className="navbar-li navbar-item" key={i}><li>{label}</li></a>
                 )
               })
             }
