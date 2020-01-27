@@ -17,6 +17,10 @@ const expand = () => {
   }
 }
 
+const toLink = (event:React.MouseEvent, linkName:string) => {
+  window.location.hash = linkName
+}
+
 const Navbar: React.FC<NavProps> = ({labels, targets}) => {
 
   return (
@@ -34,7 +38,7 @@ const Navbar: React.FC<NavProps> = ({labels, targets}) => {
             {
               labels.map((label, i) => {
                 return (
-                  <a href={targets[i]}className="navbar-li navbar-item" key={i}><li>{label}</li></a>
+                  <a href={targets[i]} onClick={e => toLink(e, targets[i])} className="navbar-li navbar-item" key={i}><li>{label}</li></a>
                 )
               })
             }
